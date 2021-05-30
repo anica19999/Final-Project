@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Gnome Guardian</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <style>
+  .submit{
+      background-color: rgb(36, 92, 29);
+      transition-property: background-color;
+      transition-duration: 1s;
+      transition-timing-function: linear;
+      color: whitesmoke;
+    }
+
+    .submit:hover {
+      background-color: rgb(172, 20, 20);
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      height: auto;
+    }
+
+    .container {
+      position: relative;
+      width: 50%;
+    }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #1a241ea9;
+    overflow: hidden;
+    width: 83%;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(150, 108, 71);
+  color: white;
+  }
+
+  p.double {border-style: double;}
+    </style>
+
+</head>
+
+<body style="background-color: rgb(221, 186, 157); font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    
+    <div style = "background-color: rgb(150, 108, 71); padding: 19px; font-size: 150%; text-align:end; position: fixed; width: 100%; z-index: 10; top: 0px; left: 0px;" class = "topnav">
+        <a style = "padding: 24px; color: #ffffff; text-decoration: none;" class = "active" href = "#home">Home</a>
+        <a style = "padding: 24px; color: #ffffff; text-decoration: none;" href = "#staff">Meet Our Staff</a>
+        <a style = "padding: 24px; color: #ffffff; text-decoration: none;" href = "#pricing">Pricing</a>
+        <a style = "padding: 24px; color: #ffffff; text-decoration: none;" href = "#reviews">Reviews</a>
+        <a style = "padding: 24px; padding-right: 70px; color: #ffffff; text-decoration: none;" href = "#contact me">Contact Me</a>
+    </div>
+
+    <div class="container">
+      <img style="width:1100px; height:865px; margin-top: 60px; position:relative; top: -17px; left:90%; transform:translateX(-5%)"src="http://u.filein.io/lijQSlHqdY.png" alt="gnomie gnome gnome" class="img"> 
+      <div class="overlay">
+        <div class="text" style="font-size: 50px;">Gnome Guardian</div>
+        <div class="text" style="padding-top: 150px; font-style: italic;">Is your child too scared to go outside alone? <br> Got any monsters under any beds? <br> Perhaps the closets? <br> Well, have a go at the Gnome Guardian!</div>
+      </div>
+    </div>
+
+    <h2 style="margin-left: 42%; padding-top: 10px; font-size: 50px;" id="staff">Meet Our Staff</h2>
+    <img src="http://u.filein.io/IEv80qzuUC.png" alt="person" style="width: 300px; height: 300px; position: absolute; left:50px;">
+    <p style="position: absolute; left:130px; font-size: 25px;">Billy Bob Joe</p>
+    <img src="http://u.filein.io/IEv80qzuUC.png" alt="person" style="width: 300px; height: 300px; position: absolute; left: 800px;">
+    <p style="position: absolute; left: 874px; font-size: 25px;">Anica Desai</p>
+    <img src="http://u.filein.io/IEv80qzuUC.png" alt="person" style="width: 300px; height: 300px;  position: absolute; left: 1500px;">
+    <p style="position: absolute; left: 1520px; font-size: 25px;">Akshiti Sinha McTweety</p>
+
+    <h2 style="margin-top: 370px; text-align: center; font-size: 50px;">What are Gnome Guardians?</h2>
+    <p style="text-align: center; font-size: 25px;">Gnome Guardians are friendly, talkative, and kind creatures that are thoroughly trained to guard humans. Each gnome is given a test in which they must pass prior to being hired.</p>
+
+    <h2 id="pricing" style="text-align: center; margin-top: 75px; font-size: 40px;">Pricing</h2>
+    <p class="double" style="text-align: center; font-size: 50px; border-width: 10px; width: 500px; margin-left: 675px; border-color: rgb(94, 65, 37);">$150</p>
+
+    <h2 style="margin-top: 100px; text-align: center; font-size: 40px;" id="reviews">Reviews</h2>
+    <img src="http://u.filein.io/AehZKUG34a.png" alt="5 stars" style="margin-left: 30%; width:750px; height:200px;">
+    <p style="text-align: center; font-size: 25px; font-style: italic;">"Great staff, afforable price, and an overall amazing experience!!" - Joshua Kane</p>
+    <p style="text-align: center; font-size: 25px; font-style: italic;">"Amazing protection, friendly staff, completely worth it!!!"" - Ryan McCarthy</p>
+    <p style="text-align: center; font-size: 25px; font-style: italic;">"Great service! The gnomes are very reliable!" - Nate Brown</p>
+    <p style="text-align: center; font-size: 25px; font-style: italic;">"Absolutely amazing!! The gnomes are very good conversationalists." - Garcia Millers</p>
+
+    <form style = "padding-left:20px; width: 1866px; background-color:rgb(189, 182, 174); padding-bottom: 10px;">
+      <h1 style="font-size: 50px;">Sign Up Today!</h1>
+      <label for="pfname" class="titles" style="font-size: 25px;">Parent first name:</label><br><br>
+      <input type="text" class="text_box" id="pfname" name="pfname"  data-rule="required" style="border-radius: 15px; border-style: solid; border-width: 1px; border-color: black;"><br><br>
+      <label for="plname" class="titles" style="font-size: 25px;">Parent last name:</label><br><br>
+      <input type="text" class="text_box" id="plname" name="plname" data-rule="required" style="border-radius: 15px; border-style: solid; border-width: 1px; border-color: black;"><br><br>
+      <label for="kid" class="titles" style="font-size: 25px;">Child first name:</label><br><br>
+      <input type="text" class="text_box" id="kid" name="kid" data-rule="required" style="border-radius: 15px; border-style: solid; border-width: 1px; border-color: black;"><br><br>
+      <label for="kid1" class="titles" style="font-size: 25px;">Child last name:</label><br><br>
+      <input type="text" class="text_box" id="kid1" name="kid1" data-rule="required" style="border-radius: 15px; border-style: solid; border-width: 1px; border-color: black;"><br><br>
+      <label for="age" class="titles" style="font-size: 25px;">Child age:</label><br><br>
+      <input type="text" class="text_box" id="age" name="age" data-rule="required" style="border-radius: 15px; border-style: solid; border-width: 1px; border-color: black;"><br><br>
+      <label for="country" class="titles" style="font-size: 25px;">Country:</label><br><br>
+      <input type="text" class="text_box" id="country" name="country" data-rule="required" style="border-radius: 15px; border-style: solid; border-width: 1px; border-color: black;"><br><br>
+      <label for="q" class="titles" style="font-size: 25px;">Any questions, comments, or concerns?</label><br><br>
+      <textarea class="text_box" type="text" id="q" name="q" rows="4" style="width:480px; border-radius: 15px;"></textarea><br><br>
+      <input type="submit" value="Submit" class="submit" style="margin-left: 1775px; width: 80px; height: 40px; border-radius: 15px; border-color: black;">
+    </form>
+
+    <footer id="contact me" style="font-size: 25px;">
+      <p style="font-style: italic;">CEO: Anica Desai<br><br>
+      <a href="https://www.youtube.com/watch?v=iik25wqIuFo" target="_blank" style="color: #ffffff;">Email us at: pleaseDoNotEmailThis@gmail.com</a></p>
+      <p style="font-style: italic;">Call us at: (609)-THIS-IS-A-FAKE-NO</p>
+      <p style="margin-left: 1650px; font-size: 15px;">© Nonexistent Copyright 2021</p>
+    </footer>
+</body>
+</html>
